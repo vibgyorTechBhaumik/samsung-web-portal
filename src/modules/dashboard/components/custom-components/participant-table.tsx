@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import ParticipantDetails from './participant-details';
 import HorizontalComplianceChart from '../custom-charts/horizontal-bar-chart';
 import { executeLocalQuery } from '../../chart-editor/sourceModal.slice';
+import { useSelectedStudyId } from '../../../studies/studies.slice';
 
 type Participant = {
     id: string;
@@ -113,16 +114,19 @@ const HeaderCell = styled.div`
 
 
 const ParticipantTable: React.FC = () => {
+    const studyId = useSelectedStudyId();
     const [selectedParticipant, setSelectedParticipant] = useState<Participant | null>(null);
     const [data, setData] = useState<any>();
 
 
     const fetchData = async () => {
-        const response: any = await executeLocalQuery(`GLP1`, {
-            database: 'study_GLP1',
-            query: 'select * from exercise',
+      if (studyId){
+        const response: any = await executeLocalQuery(studyId, {
+          database: `study_${studyId}`,
+          query: 'select * from exercise',
         });
         setData(response.data);
+      }
     };
 
     const metersToMiles = (meters: string): string => {
