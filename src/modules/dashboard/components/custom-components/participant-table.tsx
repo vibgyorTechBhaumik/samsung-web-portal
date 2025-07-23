@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
+import _ from 'lodash';
 import ParticipantDetails from './participant-details';
 import HorizontalComplianceChart from '../custom-charts/horizontal-bar-chart';
 import { executeLocalQuery } from '../../chart-editor/sourceModal.slice';
@@ -118,6 +119,19 @@ const ParticipantTable: React.FC = () => {
     const [selectedParticipant, setSelectedParticipant] = useState<Participant | null>(null);
     const [data, setData] = useState<any>();
 
+    const sumExerciseDataByID = (data:any) => {
+        return _(data)
+          .groupBy('subjectid')
+          .map((entries, subjectid) => {
+            return {
+              subjectid,
+              totalCalorie: _.sumBy(entries, 'calorie'),
+              totalDuration: _.sumBy(entries, 'duration'),
+              totalDistance: _.sumBy(entries, 'distance')
+            };
+          })
+          .value();
+      }
 
     const fetchData = async () => {
       if (studyId){
@@ -125,15 +139,10 @@ const ParticipantTable: React.FC = () => {
           database: `study_${studyId}`,
           query: 'select * from exercise',
         });
-        setData(response.data);
+        const formattedData = sumExerciseDataByID(response.data)
+        setData(formattedData);
       }
     };
-
-    const metersToMiles = (meters: string): string => {
-        const MILES_PER_METER = 0.000621371;
-        return Number(Number(meters) * MILES_PER_METER).toFixed(2);
-    }
-
 
     useEffect(() => {
         fetchData();
@@ -187,11 +196,11 @@ const ParticipantTable: React.FC = () => {
                 <TableContainer>
                     <HeaderRow>
                         <HeaderCell>Subject ID</HeaderCell>
-                        <HeaderCell>Exercise</HeaderCell>
-                        <HeaderCell>Calorie</HeaderCell>
-                        <HeaderCell>Duration</HeaderCell>
-                        <HeaderCell>Distance</HeaderCell>
-                        <HeaderCell>Max Heart Rate</HeaderCell>
+                        <HeaderCell>Week</HeaderCell>
+                        <HeaderCell>Duration of Moderate - <br/>Intensity Exercise</HeaderCell>
+                        <HeaderCell>Days of Resistance Training</HeaderCell>
+                        <HeaderCell>BIA Completed?</HeaderCell>
+                        <HeaderCell>Weight</HeaderCell>
                     </HeaderRow>
 
                     {data?.map((p: any) => (
@@ -199,11 +208,11 @@ const ParticipantTable: React.FC = () => {
                             <UnderlinedButton onClick={() => setSelectedParticipant(p)}>
                                 {p.subjectid}
                             </UnderlinedButton>
-                            <Highlight>{p.exercisecustomtype}</Highlight>
-                            <Highlight>{Number(p.calorie).toFixed(2)} cal</Highlight>
-                            <Highlight>{Number(p.duration/ 60000).toFixed(0)} mins</Highlight>
-                            <Highlight>{metersToMiles(p.distance)} miles</Highlight>
-                            <Highlight>{p.maxheartrate}</Highlight>
+                            <Highlight>Week 1</Highlight>
+                            <Highlight>{Number(p.totalDuration/ 60000).toFixed(0)} mins</Highlight>
+                            <Highlight>0 days</Highlight>
+                            <Highlight>Not Completed</Highlight>
+                            <Highlight>75 kg</Highlight>
                         </DataRow>
                     ))}
                 </TableContainer>
