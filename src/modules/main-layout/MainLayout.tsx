@@ -25,6 +25,7 @@ import Sidebar from './sidebar/Sidebar';
 import Studies from 'src/modules/studies/Studies';
 import Overview from 'src/modules/overview/Overview';
 import Dashboard from 'src/modules/dashboard/Dashboard';
+import DashboardNew from 'src/modules/dashboard/Dashboardnew';
 import TaskManagement from 'src/modules/task-management/TaskManagement';
 import StudyManagement from 'src/modules/subject/StudyManagement';
 import StudyData from "src/modules/study-data/StudyData";
@@ -193,6 +194,7 @@ const MainLayout = () => {
     [
       Path.Overview,
       Path.Dashboard,
+      Path.DashboardNew,
       Path.TaskManagement,
       Path.SubjectManagement,
       Path.StudyData,
@@ -258,6 +260,7 @@ const MainLayout = () => {
                 />
 
                 <Route exact path={Path.Dashboard} component={Dashboard} />
+                <Route exact path={Path.DashboardNew} component={DashboardNew} />
                 <Route exact path={Path.CreateChart} component={ChartEditor} />
                 <Route exact path={Path.EditChart} component={ChartEditor} />
 

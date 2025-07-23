@@ -9792,6 +9792,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"echarts-for-react@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "echarts-for-react@npm:3.0.2"
+  dependencies:
+    fast-deep-equal: ^3.1.3
+    size-sensor: ^1.0.1
+  peerDependencies:
+    echarts: ^3.0.0 || ^4.0.0 || ^5.0.0
+    react: ^15.0.0 || >=16.0.0
+  checksum: d3b16325befb1294d99f6f089462415be739c1654370945eef2172efd5868596f10e4cd021e0ff65b89a6f9de5e9c331ccf3765d9167ccb12d573f9632b5b7a6
+  languageName: node
+  linkType: hard
+
 "echarts@npm:^5.5.1":
   version: 5.5.1
   resolution: "echarts@npm:5.5.1"
@@ -11802,152 +11815,6 @@ __metadata:
   checksum: 3d4d6babccccd79c5c5a3f929a68af33360d6445587d628087f39a965079d84f18ce9c3d3f917ee1e3978916fc833bb8b29377c3b403f919426f91bc6965e7a7
   languageName: node
   linkType: hard
-
-"health-reseach-web-portal@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "health-reseach-web-portal@workspace:."
-  dependencies:
-    "@babel/core": ^7.18.0
-    "@babel/plugin-transform-runtime": ^7.19.6
-    "@emotion/react": ^11.11.1
-    "@emotion/styled": ^11.11.0
-    "@floating-ui/react-dom": ^1.0.0
-    "@floating-ui/react-dom-interactions": ^0.9.3
-    "@mdx-js/react": ^1.6.22
-    "@mui/icons-material": ^5.14.9
-    "@mui/material": ^5.14.8
-    "@mui/x-data-grid": ^6.18.2
-    "@mui/x-tree-view": ^6.0.0-alpha.2
-    "@pmmmwh/react-refresh-webpack-plugin": ^0.5.7
-    "@react-spring/web": ^9.7.3
-    "@reduxjs/toolkit": ^1.8.1
-    "@storybook/addon-actions": ^6.5.5
-    "@storybook/addon-docs": ^6.5.5
-    "@storybook/addon-essentials": ^6.5.5
-    "@storybook/addon-interactions": ^6.5.5
-    "@storybook/addon-links": ^6.5.5
-    "@storybook/builder-webpack5": ^6.5.5
-    "@storybook/manager-webpack5": ^6.5.5
-    "@storybook/react": ^6.5.5
-    "@storybook/testing-library": ^0.0.11
-    "@superset-ui/embedded-sdk": 0.1.0-alpha.11
-    "@svgr/webpack": ^6.2.1
-    "@testing-library/dom": ^8.19.0
-    "@testing-library/jest-dom": ^5.16.5
-    "@testing-library/react": ^13.4.0
-    "@testing-library/user-event": ^14.4.3
-    "@transcend-io/conflux": ^4.0.3
-    "@types/codemirror": ^5.60.5
-    "@types/csv-stringify": ^3.1.0
-    "@types/d3": ^7.4.0
-    "@types/google.accounts": ^0.0.9
-    "@types/jest": ^27.5.1
-    "@types/jwt-decode": ^3.1.0
-    "@types/lodash": ^4.14.182
-    "@types/luxon": ^2.3.2
-    "@types/pako": ^2.0.3
-    "@types/qs": ^6.9.7
-    "@types/react": ^18.0.9
-    "@types/react-dnd-html5-backend": ^3.0.2
-    "@types/react-dom": ^18.0.5
-    "@types/react-router-dom": ^5.3.3
-    "@types/react-swipeable-views": ^0.13.2
-    "@types/react-test-renderer": ^18.0.0
-    "@types/react-transition-group": ^4.4.6
-    "@types/streamsaver": ^2.0.1
-    "@types/styled-components": ^5.1.25
-    "@types/textarea-caret": ^3.0.1
-    "@types/uuid": ^9.0.1
-    "@types/webpack-env": ^1.17.0
-    "@typescript-eslint/eslint-plugin": ^5.26.0
-    "@typescript-eslint/parser": ^5.26.0
-    antlr4: ^4.12.0
-    axios: ^1.6.8
-    babel-jest: ^29.3.1
-    babel-loader: ^8.2.5
-    circular-dependency-plugin: ^5.2.2
-    codemirror: ^5.65.8
-    connected-react-router: ^6.9.2
-    cross-env: ^7.0.3
-    css-loader: ^6.7.1
-    css-minimizer-webpack-plugin: ^4.0.0
-    css-spring: ^4.1.0
-    csv-stringify: ^6.2.0
-    d3: ^7.4.4
-    dnd-core: ^16.0.1
-    echarts: ^5.5.1
-    eslint: ^8.16.0
-    eslint-config-airbnb: ^19.0.4
-    eslint-config-airbnb-typescript: ^17.0.0
-    eslint-config-prettier: ^8.5.0
-    eslint-plugin-import: ^2.26.0
-    eslint-plugin-jest: ^27.1.6
-    eslint-plugin-jsx-a11y: ^6.5.1
-    eslint-plugin-react: ^7.30.0
-    eslint-plugin-react-hooks: ^4.5.0
-    eslint-plugin-storybook: ^0.5.12
-    fork-ts-checker-webpack-plugin: ^7.2.11
-    history: ^4.10.1
-    html-webpack-plugin: ^5.5.0
-    husky: ^8.0.3
-    identity-obj-proxy: ^3.0.0
-    jest: ^28.1.0
-    jest-environment-jsdom: ^29.2.1
-    jest-extended: ^3.2.0
-    jest-fetch-mock: ^3.0.3
-    jest-junit: ^15.0.0
-    jest-localstorage-mock: ^2.4.22
-    jest-styled-components: ^7.1.1
-    jest-transform-stub: ^2.0.0
-    jsdom: ^20.0.1
-    jwt-decode: ^3.1.2
-    lint-staged: ^12.4.1
-    lodash: ^4.17.21
-    luxon: ^2.4.0
-    mini-css-extract-plugin: ^2.6.1
-    node-polyfill-webpack-plugin: ^2.0.1
-    pako: ^2.1.0
-    password-validator: ^5.3.0
-    pdfjs-dist: ^3.4.120
-    prettier: ^3.1.1
-    qs: ^6.10.5
-    react: ^18.1.0
-    react-csv-reader: ^4.0.0
-    react-dnd: ^16.0.1
-    react-dnd-html5-backend: ^16.0.1
-    react-dnd-touch-backend: ^16.0.1
-    react-dom: ^18.1.0
-    react-dropzone: ^14.2.3
-    react-google-button: ^0.7.2
-    react-google-login: ^5.2.2
-    react-json-view: ^1.21.3
-    react-redux: ^8.0.2
-    react-refresh: ^0.13.0
-    react-resize-detector: ^7.1.1
-    react-router-dom: ^5.3.3
-    react-swipeable-views: ^0.14.0
-    react-test-renderer: ^18.2.0
-    react-transition-group: ^4.4.5
-    react-use: ^17.4.0
-    react-virtual: ^2.10.4
-    resize-observer-polyfill: ^1.5.1
-    smoothscroll-polyfill: ^0.4.4
-    streamsaver: ^2.0.6
-    style-loader: ^3.3.1
-    styled-components: ^5.3.5
-    textarea-caret: ^3.1.0
-    ts-jest: ^28.0.3
-    ts-loader: ^9.3.0
-    typescript: ^4.6.4
-    typescript-plugin-styled-components: ^2.0.0
-    uuid: ^9.0.0
-    web-streams-polyfill: ^3.2.1
-    webpack: ^5.76.0
-    webpack-bundle-analyzer: ^4.5.0
-    webpack-cli: ^4.9.2
-    webpack-dev-server: ^4.9.0
-  languageName: unknown
-  linkType: soft
 
 "history@npm:^4.10.1, history@npm:^4.9.0":
   version: 4.10.1
@@ -17901,6 +17768,153 @@ __metadata:
   languageName: node
   linkType: hard
 
+"reseach-stack-web-portal@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "reseach-stack-web-portal@workspace:."
+  dependencies:
+    "@babel/core": ^7.18.0
+    "@babel/plugin-transform-runtime": ^7.19.6
+    "@emotion/react": ^11.11.1
+    "@emotion/styled": ^11.11.0
+    "@floating-ui/react-dom": ^1.0.0
+    "@floating-ui/react-dom-interactions": ^0.9.3
+    "@mdx-js/react": ^1.6.22
+    "@mui/icons-material": ^5.14.9
+    "@mui/material": ^5.14.8
+    "@mui/x-data-grid": ^6.18.2
+    "@mui/x-tree-view": ^6.0.0-alpha.2
+    "@pmmmwh/react-refresh-webpack-plugin": ^0.5.7
+    "@react-spring/web": ^9.7.3
+    "@reduxjs/toolkit": ^1.8.1
+    "@storybook/addon-actions": ^6.5.5
+    "@storybook/addon-docs": ^6.5.5
+    "@storybook/addon-essentials": ^6.5.5
+    "@storybook/addon-interactions": ^6.5.5
+    "@storybook/addon-links": ^6.5.5
+    "@storybook/builder-webpack5": ^6.5.5
+    "@storybook/manager-webpack5": ^6.5.5
+    "@storybook/react": ^6.5.5
+    "@storybook/testing-library": ^0.0.11
+    "@superset-ui/embedded-sdk": 0.1.0-alpha.11
+    "@svgr/webpack": ^6.2.1
+    "@testing-library/dom": ^8.19.0
+    "@testing-library/jest-dom": ^5.16.5
+    "@testing-library/react": ^13.4.0
+    "@testing-library/user-event": ^14.4.3
+    "@transcend-io/conflux": ^4.0.3
+    "@types/codemirror": ^5.60.5
+    "@types/csv-stringify": ^3.1.0
+    "@types/d3": ^7.4.0
+    "@types/google.accounts": ^0.0.9
+    "@types/jest": ^27.5.1
+    "@types/jwt-decode": ^3.1.0
+    "@types/lodash": ^4.14.182
+    "@types/luxon": ^2.3.2
+    "@types/pako": ^2.0.3
+    "@types/qs": ^6.9.7
+    "@types/react": ^18.0.9
+    "@types/react-dnd-html5-backend": ^3.0.2
+    "@types/react-dom": ^18.0.5
+    "@types/react-router-dom": ^5.3.3
+    "@types/react-swipeable-views": ^0.13.2
+    "@types/react-test-renderer": ^18.0.0
+    "@types/react-transition-group": ^4.4.6
+    "@types/streamsaver": ^2.0.1
+    "@types/styled-components": ^5.1.25
+    "@types/textarea-caret": ^3.0.1
+    "@types/uuid": ^9.0.1
+    "@types/webpack-env": ^1.17.0
+    "@typescript-eslint/eslint-plugin": ^5.26.0
+    "@typescript-eslint/parser": ^5.26.0
+    antlr4: ^4.12.0
+    axios: ^1.6.8
+    babel-jest: ^29.3.1
+    babel-loader: ^8.2.5
+    circular-dependency-plugin: ^5.2.2
+    codemirror: ^5.65.8
+    connected-react-router: ^6.9.2
+    cross-env: ^7.0.3
+    css-loader: ^6.7.1
+    css-minimizer-webpack-plugin: ^4.0.0
+    css-spring: ^4.1.0
+    csv-stringify: ^6.2.0
+    d3: ^7.4.4
+    dnd-core: ^16.0.1
+    echarts: ^5.5.1
+    echarts-for-react: ^3.0.2
+    eslint: ^8.16.0
+    eslint-config-airbnb: ^19.0.4
+    eslint-config-airbnb-typescript: ^17.0.0
+    eslint-config-prettier: ^8.5.0
+    eslint-plugin-import: ^2.26.0
+    eslint-plugin-jest: ^27.1.6
+    eslint-plugin-jsx-a11y: ^6.5.1
+    eslint-plugin-react: ^7.30.0
+    eslint-plugin-react-hooks: ^4.5.0
+    eslint-plugin-storybook: ^0.5.12
+    fork-ts-checker-webpack-plugin: ^7.2.11
+    history: ^4.10.1
+    html-webpack-plugin: ^5.5.0
+    husky: ^8.0.3
+    identity-obj-proxy: ^3.0.0
+    jest: ^28.1.0
+    jest-environment-jsdom: ^29.2.1
+    jest-extended: ^3.2.0
+    jest-fetch-mock: ^3.0.3
+    jest-junit: ^15.0.0
+    jest-localstorage-mock: ^2.4.22
+    jest-styled-components: ^7.1.1
+    jest-transform-stub: ^2.0.0
+    jsdom: ^20.0.1
+    jwt-decode: ^3.1.2
+    lint-staged: ^12.4.1
+    lodash: ^4.17.21
+    luxon: ^2.4.0
+    mini-css-extract-plugin: ^2.6.1
+    node-polyfill-webpack-plugin: ^2.0.1
+    pako: ^2.1.0
+    password-validator: ^5.3.0
+    pdfjs-dist: ^3.4.120
+    prettier: ^3.1.1
+    qs: ^6.10.5
+    react: ^18.1.0
+    react-csv-reader: ^4.0.0
+    react-dnd: ^16.0.1
+    react-dnd-html5-backend: ^16.0.1
+    react-dnd-touch-backend: ^16.0.1
+    react-dom: ^18.1.0
+    react-dropzone: ^14.2.3
+    react-google-button: ^0.7.2
+    react-google-login: ^5.2.2
+    react-json-view: ^1.21.3
+    react-redux: ^8.0.2
+    react-refresh: ^0.13.0
+    react-resize-detector: ^7.1.1
+    react-router-dom: ^5.3.3
+    react-swipeable-views: ^0.14.0
+    react-test-renderer: ^18.2.0
+    react-transition-group: ^4.4.5
+    react-use: ^17.4.0
+    react-virtual: ^2.10.4
+    resize-observer-polyfill: ^1.5.1
+    smoothscroll-polyfill: ^0.4.4
+    streamsaver: ^2.0.6
+    style-loader: ^3.3.1
+    styled-components: ^5.3.5
+    textarea-caret: ^3.1.0
+    ts-jest: ^28.0.3
+    ts-loader: ^9.3.0
+    typescript: ^4.6.4
+    typescript-plugin-styled-components: ^2.0.0
+    uuid: ^9.0.0
+    web-streams-polyfill: ^3.2.1
+    webpack: ^5.76.0
+    webpack-bundle-analyzer: ^4.5.0
+    webpack-cli: ^4.9.2
+    webpack-dev-server: ^4.9.0
+  languageName: unknown
+  linkType: soft
+
 "reselect@npm:^4.1.7":
   version: 4.1.7
   resolution: "reselect@npm:4.1.7"
@@ -18565,6 +18579,13 @@ __metadata:
   version: 1.0.5
   resolution: "sisteransi@npm:1.0.5"
   checksum: aba6438f46d2bfcef94cf112c835ab395172c75f67453fe05c340c770d3c402363018ae1ab4172a1026a90c47eaccf3af7b6ff6fa749a680c2929bd7fa2b37a4
+  languageName: node
+  linkType: hard
+
+"size-sensor@npm:^1.0.1":
+  version: 1.0.2
+  resolution: "size-sensor@npm:1.0.2"
+  checksum: de7050178ae9afee3388eb9191af0902b30ef83c26e8c9d9c203e1b560e270b947d978e4f56d211802112d09ef296931fa612f69155a483900f3b4717a0750d7
   languageName: node
   linkType: hard
 

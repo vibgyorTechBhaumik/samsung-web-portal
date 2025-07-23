@@ -90,6 +90,11 @@ const menuItemsRegistry = {
     icon: <DashboardIcon />,
     section: Path.Dashboard,
   },
+  dashboardNew: {
+    title: 'Dashboard New',
+    icon: <DashboardIcon />,
+    section: Path.DashboardNew,
+  },
   taskManagement: {
     title: 'Task',
     icon: <TaskIcon />,
@@ -527,6 +532,7 @@ const Sidebar: React.FC<Props> = ({ onStudyClick }) => {
   const {
     overview,
     dashboard,
+    dashboardNew,
     taskManagement,
     subjectManagement,
     studyData,
@@ -538,6 +544,7 @@ const Sidebar: React.FC<Props> = ({ onStudyClick }) => {
   const menuItems = [
     overview,
     dashboard,
+    dashboardNew,
     taskManagement,
     subjectManagement,
     studyData,

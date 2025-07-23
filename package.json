@@ -55,6 +55,7 @@
     "d3": "^7.4.4",
     "dnd-core": "^16.0.1",
     "echarts": "^5.5.1",
+    "echarts-for-react": "^3.0.2",
     "history": "^4.10.1",
     "jwt-decode": "^3.1.2",
     "lodash": "^4.17.21",
@@ -184,5 +185,6 @@
   "lint-staged": {
     "*.{ts,tsx}": "eslint --color --max-warnings 0",
     "*.{ts,tsx,json,yml,html,js}": "prettier --check"
-  }
+  },
+  "packageManager": "yarn@3.2.1+sha512.2e8753234dc01d8cc7ed64c98e459a382c68cf239ce06102b2bec91cbbdf383ba520010e85df0f70fc400648d0706ac5bf37b59d99e3488c44a5436b50bf4204"
 }

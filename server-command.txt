@@ -1,0 +1,15 @@
+
+screen -S yarnapi
+
+API_URL=http://51.21.3.255:50001 yarn dev:api
+
+Detach and leave it running:
+Press Ctrl + A, then D
+
+Reattach later:
+
+screen -r yarnapi
+
+
+
+screen -X -S yarnapi quit

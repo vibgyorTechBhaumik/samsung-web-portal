@@ -28,6 +28,7 @@ export enum Path {
   LabVisitManagement = '/lab-visit',
 
   Dashboard = '/dashboard',
+  DashboardNew = '/dashboardnew',
   CreateChart = '/dashboard/:dashboardId/chart/create',
   EditChart = '/dashboard/:dashboardId/chart/:chartId/edit',
 
@@ -51,6 +52,7 @@ export const history = makeHistory();
 const sectionPaths = [
   Path.Overview,
   Path.Dashboard,
+  Path.DashboardNew,
   Path.TaskManagement,
   Path.SubjectManagement,
   Path.StudyData,

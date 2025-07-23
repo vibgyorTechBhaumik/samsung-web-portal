@@ -61,7 +61,7 @@ const SourceModal = ({ data, onRequestClose, onSaved }: SourceModalProps) => {
 
   const onExecuteQuery = () => {
     if (disableExecuteQuery || !cachedData || !cachedData.source) return;
-
+    console.log(`studyId`,studyId)
     executeQuery(studyId);
     setIsChanged(true);
   };

@@ -169,3 +169,17 @@ export const useSourceModal = (data: UseModalCachedDataArg) => {
     },
   };
 };
+
+export const executeLocalQuery = async (studyId: string, source: ChartSource) => {
+  if (!source) return;
+  try {
+    const executeRes = await API.executeChartDataQuery({ studyId }, source);
+    executeRes.checkError();
+    const queryResponse = transformDataQueryResponse(executeRes.data);
+
+    return queryResponse;
+  } catch (err) {
+    return []
+  } finally {
+  }
+};
